@@ -1,0 +1,1 @@
+Gotowa strona JOJTEK CARS. Numer 889 068 334 jest podpięty pod telefon i WhatsApp. Zdjęcia są w folderze images.

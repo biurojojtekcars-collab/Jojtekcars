@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {
+      "stars": 5,
+      "name": "Twoja opinia tutaj",
+      "text": "Podeślij nam prawdziwą opinię klienta, a dodamy ją tutaj."
+    },
+    {
+      "stars": 5,
+      "name": "Twoja opinia tutaj",
+      "text": "Możemy dodać kolejną opinię z Google lub Facebooka."
+    },
+    {
+      "stars": 5,
+      "name": "Twoja opinia tutaj",
+      "text": "Prawdziwe opinie klientów zwiększą wiarygodność strony."
+    }
+  ]
+}

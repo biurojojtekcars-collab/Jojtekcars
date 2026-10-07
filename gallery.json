@@ -1,0 +1,16 @@
+{
+  "photos": [
+    {
+      "image": "/images/laweta-1.jpg",
+      "caption": "Transport auta po realizacji zlecenia."
+    },
+    {
+      "image": "/images/laweta-2.jpg",
+      "caption": "Transport samochodu osobowego."
+    },
+    {
+      "image": "/images/laweta-3.jpg",
+      "caption": "Transport auta klasycznego."
+    }
+  ]
+}

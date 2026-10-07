@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: biurojojtekcars-collab/Jojtekcars
+  branch: main
+  use_graphql: true
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Dane strony"
+    files:
+      - file: "content/site.json"
+        label: "Dane i oferta"
+        name: "site"
+        fields:
+          - {label: "Lata doświadczenia", name: "experience", widget: "string"}
+          - {label: "Liczba aut", name: "cars", widget: "string"}
+          - {label: "Dostępność", name: "availability", widget: "string"}
+          - {label: "Lokalizacja", name: "location", widget: "string"}
+          - {label: "Telefon", name: "phone", widget: "string"}
+          - {label: "WhatsApp (bez +)", name: "whatsapp", widget: "string"}
+          - {label: "Nagłówek", name: "headline", widget: "string"}
+          - {label: "Opis", name: "lead", widget: "text"}
+          - {label: "Zdjęcie główne", name: "hero_image", widget: "image"}
+          - {label: "Opis zdjęcia głównego", name: "hero_caption", widget: "string"}
+          - label: "Kierunki"
+            name: "directions"
+            widget: "list"
+          - label: "Usługi"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Ikona", name: "icon", widget: "string"}
+              - {label: "Nazwa", name: "title", widget: "string"}
+              - {label: "Opis", name: "text", widget: "text"}
+  - name: "gallery"
+    label: "Galeria zdjęć"
+    files:
+      - file: "content/gallery.json"
+        label: "Zdjęcia lawety"
+        name: "gallery"
+        fields:
+          - label: "Zdjęcia"
+            name: "photos"
+            widget: "list"
+            fields:
+              - {label: "Zdjęcie", name: "image", widget: "image"}
+              - {label: "Opis", name: "caption", widget: "string", required: false}
+  - name: "reviews"
+    label: "Opinie klientów"
+    files:
+      - file: "content/reviews.json"
+        label: "Opinie"
+        name: "reviews"
+        fields:
+          - label: "Opinie"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - {label: "Gwiazdki", name: "stars", widget: "number", min: 1, max: 5, value_type: "int"}
+              - {label: "Imię / firma", name: "name", widget: "string"}
+              - {label: "Treść opinii", name: "text", widget: "text"}

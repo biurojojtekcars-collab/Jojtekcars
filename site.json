@@ -1,0 +1,53 @@
+{
+  "experience": "6+",
+  "cars": "800+",
+  "availability": "7 dni",
+  "location": "Trąbki, 32-020 Wieliczka",
+  "phone": "889 068 334",
+  "whatsapp": "48889068334",
+  "headline": "Twoje auto. Nasz transport.",
+  "lead": "Transport samochodów, aut uszkodzonych i niesprawnych, odbiór z aukcji oraz pomoc drogowa. Szybko, konkretnie i bez zbędnego kombinowania.",
+  "hero_image": "/images/laweta-2.jpg",
+  "hero_caption": "JOJTEK CARS — transport aut i pomoc drogowa",
+  "directions": [
+    "Polska",
+    "Niemcy",
+    "Holandia",
+    "Belgia",
+    "Francja",
+    "Szwajcaria",
+    "Wielka Brytania"
+  ],
+  "services": [
+    {
+      "icon": "🚛",
+      "title": "Transport samochodów",
+      "text": "Transport aut osobowych i dostawczych w Polsce i Europie."
+    },
+    {
+      "icon": "💥",
+      "title": "Auta uszkodzone",
+      "text": "Samochody po kolizjach, awariach i niesprawne."
+    },
+    {
+      "icon": "🏆",
+      "title": "Odbiór z aukcji",
+      "text": "Odbiór auta z aukcji, placu lub komisu i dostawa pod adres."
+    },
+    {
+      "icon": "🔧",
+      "title": "Pomoc drogowa",
+      "text": "Awaria, kolizja albo unieruchomione auto? Zorganizujemy transport."
+    },
+    {
+      "icon": "🚐",
+      "title": "Busy i dostawcze",
+      "text": "Transport większych samochodów i pojazdów dostawczych."
+    },
+    {
+      "icon": "🏗️",
+      "title": "Maszyny i ładunki",
+      "text": "Transport wybranych maszyn i nietypowych ładunków."
+    }
+  ]
+}
