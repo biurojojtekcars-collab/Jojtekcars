@@ -14,4 +14,126 @@ header{position:sticky;top:0;z-index:20;background:rgba(8,8,8,.94);backdrop-filt
 nav{display:flex;gap:20px;font-size:14px}nav a:hover{color:var(--yellow)}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:10px;background:var(--yellow);color:#000;font-weight:800;border:0;cursor:pointer}.btn.dark{background:#181818;color:#fff;border:1px solid #333}
 .hero{padding:78px 0 55px;background:radial-gradient(circle at 80% 15%,#242000 0,transparent 34%)}
-.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}.ey
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}.eyebrow{color:var(--yellow);font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:1px}
+h1{font-size:clamp(45px,7vw,76px);line-height:.98;margin:12px 0 22px;letter-spacing:-3px}h1 span{color:var(--yellow)}
+.lead{font-size:18px;color:#ccc;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.stats{display:flex;gap:25px;flex-wrap:wrap;margin-top:25px}.stat strong{display:block;font-size:25px;color:var(--yellow)}.stat small{color:var(--muted)}
+.heroimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:1px solid #333;box-shadow:0 20px 60px #000}
+section{padding:75px 0;border-top:1px solid var(--line)}h2{font-size:36px;margin:0 0 10px} .sub{color:var(--muted);margin:0 0 30px}
+.directions{color:#ddd;margin:15px 0 30px}.directions b{color:var(--yellow)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}.icon{font-size:30px}.card h3{margin:12px 0 6px}.card p{color:#aaa;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery img{width:100%;height:250px;object-fit:cover;border-radius:14px;border:1px solid #292929}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.review{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}.stars{color:var(--yellow);letter-spacing:2px}.review p{color:#ccc}.review b{display:block}
+.quote{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contactbox{background:#151515;border:1px solid #292929;border-radius:16px;padding:28px}.phone{font-size:30px;font-weight:900;color:var(--yellow);margin:10px 0 20px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.full{grid-column:1/-1}input,select,textarea{width:100%;background:#0d0d0d;color:#fff;border:1px solid #333;border-radius:9px;padding:13px;font:inherit}textarea{min-height:110px;resize:vertical}
+footer{padding:35px 0;color:#777;border-top:1px solid var(--line);font-size:14px}
+@media(max-width:800px){nav{display:none}.grid,.quote{grid-template-columns:1fr}.cards,.reviews{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:190px}h1{letter-spacing:-2px}.hero{padding-top:45px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#">JOJTEK <span>CARS</span></a>
+<nav><a href="#uslugi">Usługi</a><a href="#galeria">Galeria</a><a href="#opinie">Opinie</a><a href="#wycena">Wycena</a><a href="#kontakt">Kontakt</a></nav>
+<a class="btn" href="#wycena">Szybka wycena</a>
+</div></header>
+
+<main>
+<section class="hero" id="kontakt"><div class="wrap grid">
+<div>
+<div class="eyebrow">Transport samochodów • Polska & Europa</div>
+<h1>Twoje auto.<br><span>Nasz transport.</span></h1>
+<p class="lead" id="lead">Transport samochodów, aut uszkodzonych i niesprawnych, odbiór z aukcji oraz pomoc drogowa. Szybko, konkretnie i bez zbędnego kombinowania.</p>
+<div class="actions"><a class="btn" href="#wycena">📋 Zamów wycenę</a><a class="btn dark" id="callTop">📞 889 068 334</a><a class="btn dark" id="waTop">💬 WhatsApp</a></div>
+<div class="stats"><div class="stat"><strong id="experience">6+</strong><small>lat doświadczenia</small></div><div class="stat"><strong id="cars">800+</strong><small>przetransportowanych aut</small></div><div class="stat"><strong>7 dni</strong><small>kontakt i zlecenia</small></div></div>
+<p>📍 <span id="location">Trąbki, 32-020 Wieliczka</span></p>
+</div>
+<div><img id="heroImage" class="heroimg" src="images/uploads/laweta-2.jpg" alt="JOJTEK CARS — transport aut i pomoc drogowa"></div>
+</div></section>
+
+<section id="uslugi"><div class="wrap">
+<h2>Co możemy dla Ciebie zrobić?</h2><p class="sub">Transport auta od odbioru po bezpieczne dostarczenie.</p>
+<div class="directions"><b>Obsługiwane kierunki:</b> <span id="directions">Polska • Niemcy • Holandia • Belgia • Francja • Szwajcaria • Wielka Brytania</span></div>
+<div class="cards" id="services"></div>
+</div></section>
+
+<section id="galeria"><div class="wrap">
+<h2>Nasza laweta w pracy</h2><p class="sub">Prawdziwe zdjęcia z realizacji.</p>
+<div class="gallery" id="gallery"></div>
+</div></section>
+
+<section id="opinie"><div class="wrap">
+<h2>Opinie klientów</h2><p class="sub">Najważniejsze są dla nas zadowolenie klienta i bezpiecznie dostarczone auto.</p>
+<div class="reviews" id="reviews"></div>
+</div></section>
+
+<section id="wycena"><div class="wrap quote">
+<div class="contactbox"><h2>Szybka wycena</h2><p class="sub">Podaj trasę i auto. Wyślij podstawowe informacje. Możesz też od razu zadzwonić.</p><div class="phone" id="phone">889 068 334</div><div class="actions"><a class="btn" id="callBtn">📞 Zadzwoń</a><a class="btn dark" id="waBtn">💬 WhatsApp</a></div></div>
+<div><h2>Potrzebujesz transportu?</h2><p class="sub">Formularz przygotuje gotową wiadomość WhatsApp.</p>
+<form id="quoteForm">
+<input id="from" placeholder="Skąd, np. Kraków" required><input id="to" placeholder="Dokąd, np. Warszawa" required>
+<input id="car" placeholder="Samochód, np. BMW 320d" required><input id="clientPhone" placeholder="Twój numer telefonu" required>
+<select id="condition"><option>Sprawne</option><option>Uszkodzone</option><option>Niesprawne / nie odpala</option></select>
+<textarea class="full" id="notes" placeholder="Dodatkowe informacje"></textarea>
+<button class="btn full" type="submit">WYŚLIJ ZAPYTANIE</button>
+</form></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 JOJTEK CARS • Transport samochodów i pomoc drogowa • <span id="footerLocation">Trąbki, 32-020 Wieliczka</span> • Polska / Europa</div></footer>
+
+<script>
+const fallbackSite={
+ experience:"6+",cars:"800+",availability:"7 dni",location:"Trąbki, 32-020 Wieliczka",phone:"889 068 334",whatsapp:"48889068334",
+ headline:"Twoje auto. Nasz transport.",lead:"Transport samochodów, aut uszkodzonych i niesprawnych, odbiór z aukcji oraz pomoc drogowa. Szybko, konkretnie i bez zbędnego kombinowania.",
+ hero_image:"images/uploads/laweta-2.jpg",directions:["Polska","Niemcy","Holandia","Belgia","Francja","Szwajcaria","Wielka Brytania"],
+ services:[
+ {icon:"🚛",title:"Transport samochodów",text:"Transport aut osobowych i dostawczych w Polsce i Europie."},
+ {icon:"💥",title:"Auta uszkodzone",text:"Samochody po kolizjach, awariach i niesprawne."},
+ {icon:"🏆",title:"Odbiór z aukcji",text:"Odbiór auta z aukcji, placu lub komisu i dostawa pod adres."},
+ {icon:"🔧",title:"Pomoc drogowa",text:"Awaria, kolizja albo unieruchomione auto? Zorganizujemy transport."},
+ {icon:"🚐",title:"Busy i dostawcze",text:"Transport większych samochodów i pojazdów dostawczych."},
+ {icon:"🏗️",title:"Maszyny i ładunki",text:"Transport wybranych maszyn i nietypowych ładunków."}
+]};
+const fallbackGallery={photos:[
+ {image:"images/uploads/laweta-1.jpg",caption:"Transport auta po realizacji zlecenia."},
+ {image:"images/uploads/laweta-2.jpg",caption:"Transport samochodu osobowego."},
+ {image:"images/uploads/laweta-3.jpg",caption:"Transport auta klasycznego."}
+]};
+const fallbackReviews={reviews:[
+ {stars:5,name:"Twoja opinia tutaj",text:"W tej sekcji umieścimy prawdziwą opinię klienta. Podeślij nam opinię z Google lub Facebooka, a dodamy ją na stronę."},
+ {stars:5,name:"Twoja opinia tutaj",text:"Krótka, konkretna opinia o transporcie auta, kontakcie i realizacji zlecenia."},
+ {stars:5,name:"Twoja opinia tutaj",text:"Możemy dodać kolejne prawdziwe opinie klientów wraz z imieniem lub nazwą firmy."}
+]};
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+function render(s,g,r){
+document.getElementById("experience").textContent=s.experience||"6+";
+document.getElementById("cars").textContent=s.cars||"800+";
+document.getElementById("location").textContent=s.location||"";
+document.getElementById("footerLocation").textContent=s.location||"";
+document.getElementById("phone").textContent=s.phone||"";
+document.getElementById("lead").textContent=s.lead||"";
+document.getElementById("heroImage").src=s.hero_image||fallbackSite.hero_image;
+document.getElementById("directions").textContent=(s.directions||[]).join(" • ");
+const digits=(s.whatsapp||"").replace(/\D/g,"");
+document.getElementById("callTop").href="tel:"+digits;
+document.getElementById("callBtn").href="tel:"+digits;
+document.getElementById("waTop").href="https://wa.me/"+digits;
+document.getElementById("waBtn").href="https://wa.me/"+digits;
+document.getElementById("services").innerHTML=(s.services||[]).map(x=>`<article class="card"><div class="icon">${esc(x.icon)}</div><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`).join("");
+document.getElementById("gallery").innerHTML=(g.photos||[]).map(x=>`<figure style="margin:0"><img src="${esc(x.image)}" alt="${esc(x.caption)}"><figcaption style="color:#888;font-size:13px;margin-top:6px">${esc(x.caption)}</figcaption></figure>`).join("");
+document.getElementById("reviews").innerHTML=(r.reviews||[]).map(x=>`<article class="review"><div class="stars">${"★".repeat(Math.max(1,Math.min(5,Number(x.stars)||5)))}</div><p>${esc(x.text)}</p><b>${esc(x.name)}</b></article>`).join("");
+}
+render(fallbackSite,fallbackGallery,fallbackReviews);
+Promise.all([fetch("content/site.json").then(x=>x.ok?x.json():fallbackSite).catch(()=>fallbackSite),
+fetch("content/gallery.json").then(x=>x.ok?x.json():fallbackGallery).catch(()=>fallbackGallery),
+fetch("content/reviews.json").then(x=>x.ok?x.json():fallbackReviews).catch(()=>fallbackReviews)])
+.then(([s,g,r])=>render(s,g,r));
+document.getElementById("quoteForm").addEventListener("submit",e=>{
+e.preventDefault();
+const s=fallbackSite; const n=document.getElementById("notes").value;
+const msg=`JOJTEK CARS — zapytanie o transport%0A%0ASkąd: ${encodeURIComponent(document.getElementById("from").value)}%0ADokąd: ${encodeURIComponent(document.getElementById("to").value)}%0AAuto: ${encodeURIComponent(document.getElementById("car").value)}%0ATelefon: ${encodeURIComponent(document.getElementById("clientPhone").value)}%0AStan: ${encodeURIComponent(document.getElementById("condition").value)}%0ADodatkowe informacje: ${encodeURIComponent(n)}`;
+window.open("https://wa.me/"+s.whatsapp+"?text="+msg,"_blank");
+});
+</script>
+</body>
+</html>
