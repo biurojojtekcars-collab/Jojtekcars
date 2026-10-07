@@ -2,18 +2,18 @@
   "reviews": [
     {
       "stars": 5,
-      "name": "Twoja opinia tutaj",
-      "text": "Podeślij nam prawdziwą opinię klienta, a dodamy ją tutaj."
+      "name": "Piotr Chrobak",
+      "text": "Szybka i bardzo profesjonalna pomoc"
     },
     {
       "stars": 5,
-      "name": "Twoja opinia tutaj",
-      "text": "Możemy dodać kolejną opinię z Google lub Facebooka."
+      "name": "Filip Sagan",
+      "text": "wyciągnął samochód z bagna. Polecam"
     },
     {
       "stars": 5,
-      "name": "Twoja opinia tutaj",
-      "text": "Prawdziwe opinie klientów zwiększą wiarygodność strony."
+      "name": "Katarzyna S",
+      "text": "Polecam! ;)"
     }
   ]
 }
